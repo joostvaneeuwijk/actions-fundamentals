@@ -17,7 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "branch: ${{github.ref}}"
-          echo "trigger: ${{github.event_name}}"
+          echo "branch: ${{ github.ref }}"
+          echo "trigger: ${{ github.event_name }}"
       - run: |
           echo "lijst:"
+          tree
